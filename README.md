@@ -1,11 +1,7 @@
 # PASSWORD LAB 🔐
 
-Polished Streamlit CS-fair cybersecurity simulator.
+Cybersecurity-themed Streamlit UI with a grid/circuit background.
 
-Run:
-`pip install -r requirements.txt`
-`streamlit run app.py`
+Run with `streamlit run app.py`.
 
-Deploy with Streamlit Community Cloud using `app.py` as the main file.
-
-Safety: the guessing demo is intentionally limited to a tiny local toy search space. It never contacts accounts, websites, login forms, or networks. Use fictional test passwords only.
+Use only fictional test passwords. The simulation is intentionally limited to a tiny local toy search space.

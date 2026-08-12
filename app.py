@@ -7,8 +7,41 @@ st.set_page_config(page_title="PASSWORD LAB // Cybersecurity Simulator", page_ic
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap');
-.stApp{background:radial-gradient(circle at 10% 0%,#102338 0,transparent 25%),radial-gradient(circle at 90% 0%,#09251e 0,transparent 22%),#05070d;color:#e5edf8}
-.block-container{max-width:1250px;padding:2rem}
+body{background:#02050a}
+.stApp{
+  background:
+    linear-gradient(rgba(2,8,15,.82),rgba(2,8,15,.92)),
+    repeating-linear-gradient(0deg,rgba(56,189,248,.035) 0px,rgba(56,189,248,.035) 1px,transparent 1px,transparent 42px),
+    repeating-linear-gradient(90deg,rgba(56,189,248,.035) 0px,rgba(56,189,248,.035) 1px,transparent 1px,transparent 42px),
+    radial-gradient(circle at 15% 15%,rgba(0,190,255,.18),transparent 22%),
+    radial-gradient(circle at 85% 20%,rgba(0,255,150,.12),transparent 20%),
+    radial-gradient(circle at 50% 85%,rgba(150,40,255,.10),transparent 28%),
+    #02050a;
+  color:#e5edf8;
+  position:relative;
+}
+.stApp:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.18;
+  background:
+    linear-gradient(90deg,transparent 49.7%,rgba(56,189,248,.22) 50%,transparent 50.3%),
+    linear-gradient(0deg,transparent 49.7%,rgba(56,189,248,.18) 50%,transparent 50.3%);
+  background-size:120px 120px;
+  mask-image:radial-gradient(circle at center,#000,transparent 78%);
+}
+.stApp:after{
+  content:"";
+  position:fixed;
+  left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,transparent,#22d3ee,#a855f7,#22d3ee,transparent);
+  opacity:.65;
+  box-shadow:0 0 18px #22d3ee;
+  pointer-events:none;
+}
+.block-container{max-width:1250px;padding:2rem;position:relative}
 *{font-family:Inter,sans-serif}
 .hero{border:1px solid #203047;border-radius:24px;padding:28px 30px;background:linear-gradient(135deg,#0b1020,#080e18);box-shadow:0 24px 70px #0008}
 .badge{font:700 11px 'Space Mono';letter-spacing:.16em;color:#7dd3fc}
